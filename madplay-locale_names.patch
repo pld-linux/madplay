@@ -1,0 +1,22 @@
+--- madplay-0.15.2b/configure.ac~	Mon Jul 26 11:09:23 2004
++++ madplay-0.15.2b/configure.ac	Mon Jul 26 11:09:23 2004
+@@ -141,7 +141,7 @@
+ 
+ dnl Internationalization support.
+ 
+-ALL_LINGUAS="en es fr hr no"
++ALL_LINGUAS="en es fr hr nb"
+ 
+ AM_GNU_GETTEXT([use-libtool])
+ AM_GNU_GETTEXT_VERSION(0.14.1)
+--- madplay-0.15.2b/configure~	Mon Jul 26 11:09:20 2004
++++ madplay-0.15.2b/configure	Mon Jul 26 11:09:20 2004
+@@ -19094,7 +19094,7 @@
+ fi
+ 
+ 
+-ALL_LINGUAS="en es fr hr no"
++ALL_LINGUAS="en es fr hr nb"
+ 
+ 
+         MKINSTALLDIRS=
