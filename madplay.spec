@@ -12,7 +12,7 @@ Group:		Applications/Sound
 Source0:	ftp://ftp.mars.org/pub/mpeg/%{name}-%{version}.tar.gz
 # Source0-md5:	35762ddeb46fba8bbf0a260b6c425e82
 URL:		http://www.underbit.com/products/mad/
-%{?with_alsa:BuildRequires:	alsa-lib-devel}
+%{?with_alsa:BuildRequires:	alsa-lib-devel >= 0.9.0}
 BuildRequires:	automake
 BuildRequires:	esound-devel
 BuildRequires:	libmad-devel
@@ -35,6 +35,7 @@ MPEG audio (m.in. mp3). Jest on oparty na bibliotece dekoduj±cej MAD
 
 %build
 cp -f /usr/share/automake/config.* .
+%{?with_alsa:CPPFLAGS="-DALSA_PCM_OLD_HW_PARAMS_API"}
 %configure \
 	%{?with_alsa:--with-alsa}
 
