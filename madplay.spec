@@ -6,11 +6,12 @@ Summary:	MPEG audio decoder and player
 Summary(pl):	Dekoder i odtwarzacz audio w formacie MPEG
 Name:		madplay
 Version:	0.15.2b
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Sound
 Source0:	ftp://ftp.mars.org/pub/mpeg/%{name}-%{version}.tar.gz
 # Source0-md5:	6814b47ceaa99880c754c5195aa1aac1
+Patch0:		%{name}-locale_names.patch
 URL:		http://www.underbit.com/products/mad/
 %{?with_alsa:BuildRequires:	alsa-lib-devel >= 0.9.0}
 BuildRequires:	automake
@@ -32,6 +33,9 @@ MPEG audio (m.in. mp3). Jest on oparty na bibliotece dekoduj±cej MAD
 
 %prep
 %setup -q
+%patch0 -p1
+
+mv -f po/{no,nb}.po
 
 %build
 cp -f /usr/share/automake/config.* .
