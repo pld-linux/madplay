@@ -28,7 +28,7 @@ distributed separately.
 
 %description -l pl
 Madplay to dzia³aj±cy w oparciu o wiersz poleceñ odtwarzacz plików
-MPEG audio (m.in. mp3). Jest on oparty na bibliotece dekoduj±cej MAD
+MPEG audio (m.in. MP3). Jest on oparty na bibliotece dekoduj±cej MAD
 (libmad).
 
 %prep
