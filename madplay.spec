@@ -1,18 +1,19 @@
 #
 # Conditional build:
-# _without_alsa	- without ALSA support
+%bcond_without	alsa	# without ALSA support
 #
 Summary:	MPEG audio decoder and player
 Summary(pl):	Dekoder i odtwarzacz audio w formacie MPEG
 Name:		madplay
 Version:	0.15.0b
-Release:	0.9
+Release:	1
 License:	GPL
 Group:		Applications/Sound
 Source0:	ftp://ftp.mars.org/pub/mpeg/%{name}-%{version}.tar.gz
 # Source0-md5:	35762ddeb46fba8bbf0a260b6c425e82
 URL:		http://www.underbit.com/products/mad/
-%{!?_without_alsa:BuildRequires:	alsa-lib-devel}
+%{?with_alsa:BuildRequires:	alsa-lib-devel}
+BuildRequires:	automake
 BuildRequires:	esound-devel
 BuildRequires:	libmad-devel
 BuildRequires:	libid3tag-devel
@@ -33,8 +34,9 @@ MPEG audio (m.in. mp3). Jest on oparty na bibliotece dekoduj±cej MAD
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.* .
 %configure \
-	%{!?_without_alsa:--with-alsa}
+	%{?with_alsa:--with-alsa}
 
 %{__make}
 
