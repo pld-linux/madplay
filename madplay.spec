@@ -6,6 +6,7 @@ Release:	0.9
 License:	GPL
 Group:		Applications/Sound
 Source0:	ftp://ftp.mars.org/pub/mpeg/%{name}-%{version}.tar.gz
+# Source0-md5:	35762ddeb46fba8bbf0a260b6c425e82
 URL:		http://www.underbit.com/products/mad/
 BuildRequires:	alsa-lib-devel
 BuildRequires:	esound-devel
