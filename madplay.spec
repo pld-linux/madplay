@@ -4,7 +4,7 @@
 %bcond_without	esd	# without esd support
 #
 Summary:	MPEG audio decoder and player
-Summary(pl):	Dekoder i odtwarzacz audio w formacie MPEG
+Summary(pl.UTF-8):   Dekoder i odtwarzacz audio w formacie MPEG
 Name:		madplay
 Version:	0.15.2b
 Release:	3
@@ -27,9 +27,9 @@ Madplay is a command-line MPEG audio decoder and player based on the
 MAD library (libmad). For details about MAD, see the libmad package
 distributed separately.
 
-%description -l pl
-Madplay to dzia³aj±cy w oparciu o wiersz poleceñ odtwarzacz plików
-MPEG audio (m.in. MP3). Jest on oparty na bibliotece dekoduj±cej MAD
+%description -l pl.UTF-8
+Madplay to dziaÅ‚ajÄ…cy w oparciu o wiersz poleceÅ„ odtwarzacz plikÃ³w
+MPEG audio (m.in. MP3). Jest on oparty na bibliotece dekodujÄ…cej MAD
 (libmad).
 
 %prep
