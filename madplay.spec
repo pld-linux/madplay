@@ -4,7 +4,7 @@
 %bcond_without	esd	# without esd support
 #
 Summary:	MPEG audio decoder and player
-Summary(pl.UTF-8):   Dekoder i odtwarzacz audio w formacie MPEG
+Summary(pl.UTF-8):	Dekoder i odtwarzacz audio w formacie MPEG
 Name:		madplay
 Version:	0.15.2b
 Release:	3
