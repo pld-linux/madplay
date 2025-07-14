@@ -34,7 +34,7 @@ MPEG audio (m.in. MP3). Jest on oparty na bibliotece dekodującej MAD
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 mv -f po/{no,nb}.po
 
